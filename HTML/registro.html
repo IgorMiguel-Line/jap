@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Cadastro JF</title>
+</head>
+<body>
+    <form>
+        <div>
+            <div><label>Digite seu Email</label></div>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="validateFields()" />
+            <div>
+                <div><label>Digite sua Senha</label></div>
+                <input type="password" name="password" id="password" placeholder="Senha" onchange="validateFields()" />
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar
+                    senha</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="cadastro()">Cadastrar</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="voltar()">Voltar</button>
+            </div>
+    </form>
+    <script src="../js/onclicks.js"></script>
+    <script src="../js/index.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCg1MVQELNs4k5tdM6W3LBdDRgBJa8iBgs",
+            authDomain: "japanfood-b36c5.firebaseapp.com",
+            projectId: "japanfood-b36c5",
+            storageBucket: "japanfood-b36c5.appspot.com",
+            messagingSenderId: "905239397599",
+            appId: "1:905239397599:web:96c2363ef8cdb886b8556a"
+            };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

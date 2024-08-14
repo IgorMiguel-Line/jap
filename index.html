@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home JF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/styless.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+    <div class="even">
+        <a href="#!">Home</a>
+        <a href="#!">Menu</a>
+        <a href="#!">Perfil</a>
+        <a href="#!">Sing in/Sing Up</a>
+        <a href="#!">Log Out</a>
+        <a href="#!">Produtos</a>
+    </div>
+    <div class="content">
+        <div class="header-box">
+            <div onclick="Home()" class="header-logo">
+                <i class="fas fa-utensils"></i>
+                Japan Food.
+            </div>
+
+            <ul class="header-list header-small">
+                <li class="header-item"><a href="./index.html" class="header-link active">Home</a></li>
+                <li class="header-item"><a href="./HTML/menu.html" class="header-link">Menu</a></li>
+                <li class="header-item"><a href="#!" class="header-link">Perfil</a></li>
+                <li class="header-item"><a href="./HTML/login.html" class="header-link">Sing-in/Sing-up</a></li>
+                <li class="header-item"><a href="./HTML/acesso_privado.html" class="header-link">CDS Produtos</a>
+                </li>
+            </ul>
+            <ul class="header-list">
+                <li class="header-other header-menu">
+                    <i class="fas fa-list menu-bars"></i>
+                </li>
+                <li class="header-other icon-search">
+                    <i class="fas fa-search"></i>
+                </li>
+                <li class="header-other">
+                    <i class="fas fa-heart"></i>
+                </li>
+                <li class="header-other">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+            </ul>
+        </div>
+        <form class="search-form">
+            <input type="text" id="search" placeholder="Search here..." autocomplete="off" class="search-input">
+            <label for="search"><i class="fas fa-search"></i></label>
+            <i class="fas fa-times search-close"></i>
+        </form>
+        <div class="container_img">
+            <img src="./img/img_sushi.jpg" alt="sushi">
+            <img src="./img/img_lamem.jpg" alt="sushi">
+            <img src="./img/img_tempura.webp" alt="sushi">
+        </div>
+    </div>
+</body>
+<footer style="background-color: rgb(45, 211, 111);">
+    <br><br><br>
+    <p style="font-size: 10px; text-align: center;">2024-Todos os direitos reservados ao autor</p>
+    <br><br><br>
+</footer>
+<script src="./js/main.js"> </script>
+<script>
+    function Home(){
+        window.location.href = "./index.html";
+    }
+    const main = new Main()
+    main.menuToggle()
+    main.clickSearch()
+</script>
+
+</html>

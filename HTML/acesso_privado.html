@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso privado</title>
+
+    <link rel="stylesheet" href="../css/stylesss.css">
+</head>
+<body style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <div>
+        <input id="code" type="text">
+        <input type="submit" onclick="enable()">
+    </div>
+</body>
+<script>
+    let code = document.getElementById('code');
+    function enable() {
+        if (code.value == "any") {
+            alert("Código valido")
+            window.location.href = "./Casdastro_de_produtos.html";
+        }
+        else{
+            alert("Código invalido")
+        }
+    }
+</script>
+</html>
